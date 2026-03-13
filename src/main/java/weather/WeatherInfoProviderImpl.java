@@ -136,9 +136,8 @@ public class WeatherInfoProviderImpl implements WeatherInfoProvider {
 
     public static void main(String[] args) {
         WeatherInfoProvider weatherInfoProvider = new WeatherInfoProviderImpl();
-//        String response = weatherInfoProvider.provideForecast(12, 12);
-//        RainForecast rain = weatherInfoProvider.provideRainforecast(12, 12);
-//        System.out.println("API response is " + rain);
+
+        // Improve it by accepting longitude, latitude pair from the user.
         double longitude = 39.7456, latitude = -97.0892;
         RainForecast rain = weatherInfoProvider.provideRainforecast(longitude, latitude);
         System.out.println("Rain forecast is " + rain);
