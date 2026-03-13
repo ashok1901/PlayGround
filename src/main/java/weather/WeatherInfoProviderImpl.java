@@ -109,7 +109,7 @@ public class WeatherInfoProviderImpl implements WeatherInfoProvider {
         }
         String forecastGridDataProviderURL = valuesNode.asText();
 
-        System.out.println(forecastGridDataProviderURL);
+        System.out.println("Rain forecast grid data provider endpoint is : " + forecastGridDataProviderURL);
         return forecastGridDataProviderURL;
 
     }
