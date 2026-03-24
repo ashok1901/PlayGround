@@ -1,6 +1,8 @@
 package cache;
 
 import org.junit.jupiter.api.Test;
+import ratelimiting.SlidingWindowRateLimiter;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SlidingWindowRateLimiterTest {

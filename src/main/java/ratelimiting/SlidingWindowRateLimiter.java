@@ -1,4 +1,4 @@
-package cache;
+package ratelimiting;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
