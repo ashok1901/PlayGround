@@ -13,6 +13,7 @@ public class SlidingWindowRateLimiter {
     private final Map<String, Deque<Long>> requestMap = new HashMap<>();
 
     public synchronized boolean allowRequest(String userId, long timestamp) {
+        // checkpoint
         Deque<Long> timestamps = requestMap.computeIfAbsent(userId, k -> new ArrayDeque<>());
 
         // Remove expired timestamps
